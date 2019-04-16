@@ -146,16 +146,7 @@ public class StringUtil {
         return df.format(d);
     }
 
-    /**
-     * 文件保存地址
-     *
-     * @return
-     */
-    public static String getFilePath(String filePackage) {
-        return Environment.getExternalStorageDirectory().getAbsolutePath()
-                + File.separator
-                + "ChengXiangWallet" + File.separator + filePackage;
-    }
+
 
 
     public static boolean isChinese(String str) {

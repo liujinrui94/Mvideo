@@ -26,11 +26,6 @@ public class GsonUtil {
         }
         return gson;
     }
-//    public static <T> List<T> jsonToList(String jsonString, Class<T> clazz) {
-//        @SuppressWarnings("unchecked")
-//        List<T> ts = (List<T>) JSONArray.parseArray(jsonString, clazz);
-//        return ts;
-//    }
     public static <T> T getObject(String jsonString, Type listType) {
         T t = gson.fromJson(jsonString, listType);
         return t;
