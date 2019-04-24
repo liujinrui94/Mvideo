@@ -17,7 +17,7 @@ public class TabFragmentAdapter implements BottomNavigationView.OnNavigationItem
     private BottomNavigationView bottomNavigationView;
     private FragmentActivity fragmentActivity;
     private int fragmentContentId;
-    private int currentTab=0;
+    private int currentTab = 0;
     private FragmentTransaction fragmentTransaction;
 
 
@@ -48,6 +48,7 @@ public class TabFragmentAdapter implements BottomNavigationView.OnNavigationItem
                 }
                 showTab(i);
                 ft.commit();
+                return true;
             }
         }
 

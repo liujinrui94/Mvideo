@@ -8,4 +8,35 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyTabButton">
+        <!-- 水平居中 -->
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/dp_1</item>
+        <item name="android:layout_marginTop">@dimen/dp_3</item>
+        <item name="android:layout_marginBottom">@dimen/dp_1</item>
+        <item name="android:drawablePadding">@dimen/dp_3</item>
+        <!-- 字体加粗 -->
+        <item name="android:textStyle">normal</item>
+        <!-- 字体大小 -->
+        <item name="android:textSize">12.0sp</item>
+        <!-- 文字过长的省略显示 -->
+        <item name="android:ellipsize">marquee</item>
+        <!-- 当文本不能正常现实的时候后面用..表示 -->
+        <item name="android:lines">1</item>
+    </style>
+
+
+
+    <!--解决启动闪屏的问题-->
+    <style name="SplashTheme" parent="AppTheme">
+        <!--<item name="android:windowBackground">@drawable/launcher_bg</item>-->
+        //设置背景图片
+        <item name="android:windowFullscreen">true</item>
+        //设置全屏
+        <item name="android:windowNoTitle">true</item>
+        //设置窗口全屏
+        <!--<item name="android:windowAnimationStyle">@style/notAnimation</item>-->
+    </style>
 </resources>

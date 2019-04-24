@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#7900d8</color>
+    <color name="colorPrimaryDark">#7900d8</color>
+    <color name="colorAccent">#7900d8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#F5F4F4</color>
+    <color name="home_bg_grey">#eeeeee</color>
+    <color name="font_grey">#333333</color>
+
+
+    <color name="titleTextColor">#000001</color>
+    <color name="commonBlackColor">#191919</color>
+    <color name="grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="white_home">#EAFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="f850_default_blue">#0079ff</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="header_toast_bg">#ccebfc</color>
+    <color name="header_toast">#024ca1</color>
+    <color name="header_toast_line">#abdaf4</color>
+    <color name="offline_down_title">#909090</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="gary">#898989</color>
+    <color name="taobao_black">#333333</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="progress_background">#ededed</color>
+    <color name="blue">#0067d9</color>
+
+    <color name="line">#dadbdc</color>
+    <color name="sline">#98999a</color>
+
+
+    <color name="black1">#000001</color>
 </resources>

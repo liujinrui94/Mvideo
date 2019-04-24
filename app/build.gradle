@@ -3,6 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     dataBinding.enabled = true
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+    }
     defaultConfig {
         applicationId "com.ys.video"
         minSdkVersion 15
@@ -48,4 +51,6 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.5.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.5'
 }

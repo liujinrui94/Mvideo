@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import com.ys.video.utils.StatusBarUtil;
+
 
 /**
  * Created by Edianzu on 2018/6/11.
@@ -21,6 +23,9 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StatusBarUtil.transparencyBar(this);
+        StatusBarUtil.setStatusBarLightMode(this, true);
+
     }
 
     @Override
