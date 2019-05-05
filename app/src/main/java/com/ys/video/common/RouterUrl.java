@@ -16,7 +16,7 @@ public class RouterUrl {
                 .navigation();
     }
 
-    public static final String HomeActivity = "/map/HomeActivity";
+    public static final String MainActivity = "/map/MainActivity";
 
     public static final String MineSettingActivity = "/map/MineSettingActivity";
 

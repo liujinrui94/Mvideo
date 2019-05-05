@@ -1,15 +1,19 @@
 package com.ys.video.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import com.ys.video.R;
 import com.ys.video.utils.StatusBarUtil;
 
 
@@ -26,12 +30,31 @@ public class BaseActivity extends AppCompatActivity {
         StatusBarUtil.transparencyBar(this);
         StatusBarUtil.setStatusBarLightMode(this, true);
 
+
     }
 
     @Override
     public void finish() {
         super.finish();
     }
+
+    protected void setViewPadding() {
+        ViewGroup viewGroup = (ViewGroup) ((ViewGroup) findViewById(android.R.id.content)).getChildAt(0);
+        ViewGroup fistView = (ViewGroup) viewGroup.getChildAt(0);
+        int paddingTop = fistView.getPaddingTop() + getStatusBarHeight();
+        fistView.setPadding(fistView.getPaddingLeft(), paddingTop, fistView.getPaddingRight(), fistView.getPaddingBottom());
+    }
+
+    private int getStatusBarHeight() {
+        int result = 0;
+        //获取状态栏高度的资源id
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
+    }
+
     /**
      * 以下为点击区域外隐藏软键盘
      */
